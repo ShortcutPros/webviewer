@@ -1,0 +1,71 @@
+<!-- Basic HTML-CSS Template -->
+<!-- Bustl.®︎™︎ is a trademark of Simpl System, llc. -->
+<!-- 𝐈𝐍𝐓𝐄𝐆𝐑𝐈𝐓𝐘 Framework | MIT License • https://github.com/scottdwr -->
+<!-- bulma.io v0.9.2 | MIT License | github.com/jgthms/bulma --> 
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="white-translucent">
+  <head>
+    <title>Bustl. Setup</title>
+    <link rel="apple-touch-icon" href="https://i.imgur.com/wU8q8qx.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      @charset "utf-8"; 
+      html { 
+        font-size: 100%; font-family: Helvetica, Arial, Freesans, clean, sans-serif;
+      }
+      body { margin: 0; padding: 1em; background-color: #000000; font-family: system-ui; color: #ffffff;
+      }
+      @media (prefers-color-scheme: dark) {
+        body { background-color: #000000; color: #ffffff;
+        } /* Dark Mode */
+      }
+      @media (max-device-width: 480px) {
+      }
+      @media (min-device-width: 481px) {
+        body { margin: auto; max-width: 600px;
+        }
+      }
+      img { max-width: 90%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Beg -->
+    <div class="section is-hero">
+      <div class="container" style="text-align: center; align-items: center, justify-content: center;">
+        <p class="title" style="color: #ffffff; background-color: #000000;">
+        <strong>Bustl. System Installer</strong>
+        </p><br />
+        <p class="subtitle" style="color: #000000; background-color: #ffffff; padding: 1em;">
+        <em>Easier business tasks are two steps away, get your Bustl. Shortcut System by clicking the link below.</em>
+        </p>
+          <div id="installer" class="card" style="margin: 1; padding: 1em; background-color: lightgray;">
+            <p class="subtitle">
+            <strong>Step One:</strong><br />
+            <br /> Get the <a href="https://www.icloud.com/shortcuts/2d021a05c83b4061869f70cd8ee08b08">
+            <strong><em>"Bustl Installer"</em></strong></a>
+              by clicking on the "Install Shortcut" button below:</p><br />
+              <div class="media" style="text-align: center; align-items: center; justify-content: center;">
+                <a href="shortcuts://shortcuts/2d021a05c83b4061869f70cd8ee08b08">
+                <img src="https://i.imgur.com/9JNqwPt.png" /></a>
+              </div><br />
+            </div><br />
+          <div id="runner" class="card" style="margin: 1; padding: 1em; background-color: lightgray;">
+          <p class="subtitle">
+            <strong>Step Two:</strong><br />
+            <br /> Now, setup your Bustl. Profile, get your Bustl. Access Keys, and add the Bustl. Shortcut Library to your Apple device — by clicking on the "Run Setup" button below:</p><br />
+              <div class="media" style="text-align: center; align-items: center; justify-content: center;">
+                <a href="shortcuts://run-shortcut?name=Bustl.-Installer&input=text&text=eyJub3RpZmljYXRpb24iOiJNeU5vdGlmaWNhdGlvbiIsInNlcnZlcmFjdGlvbiI6IlNob3J0Y3V0c0xvZ2dlciIsImNsaWVudCI6eyJlbWFpbCI6Im1pdGNoQHNpbXBsc3lzdGVtcy5jb20iLCJwaG9uZSI6IisxICg0MjUpIDM0My01Mzk2IiwibmFtZSI6Ik1pdGNoIFBhcmZpdHQiLCJhcGlfa2V5IjoiM2lCS1V3R1B4eEE0QlAzb19oRURQNUNrIiwiY3V1aWQiOiI5MUU2QjNBMi00RUQ0LTRBMEUtOTY3Mi0zN0VFMDU1QTZGOEQifSwiYWx0X2tleSI6IlBjZFZtQXptRjJSRGozcXVhdTdCYnhoViJ9;eyJpbnN0YWxsIjpbeyJATEktVW5pcXVlIFdvcmRzIjp7ImxpbmsiOiJzaG9ydGN1dHM6XC9cL3Nob3J0Y3V0c1wvNjFmMjkyODk4Nzc2NDI5MGIxNzMzMDE1ZDc2OWFkZjAiLCJ3YWl0IjoxMH19LHsiSU5URUdSSVRZLfCdkYPwnZGF8J2RgiI6eyJsaW5rIjoic2hvcnRjdXRzOlwvXC9zaG9ydGN1dHNcLzYxM2YzZjI5YmQ0NDQzNTZhOTVmZWI4MTMzNWMwYjM2Iiwid2FpdCI6MTF9fSx7IkBMSS1HcmFkaWVudFBhcGVyIjp7ImxpbmsiOiJzaG9ydGN1dHM6XC9cL3Nob3J0Y3V0c1wvMDAxNTkyMzdmNDY3NGZmZGFiYmQwMWZhZmJmODBlYTYiLCJ3YWl0IjoxMX19LHsiQExJLUhUTUw1LUNTUzMgVGVtcGxhdGUiOnsibGluayI6InNob3J0Y3V0czpcL1wvc2hvcnRjdXRzXC84ZGQxZmMwMjBmN2I0ZGMyOWE4OWNjMTNjZTgzNjUzYSIsIndhaXQiOjEwfX0seyJATEktVGV4dCBTdHlsZSI6eyJsaW5rIjoic2hvcnRjdXRzOlwvXC9zaG9ydGN1dHNcL2MxZDc5ODNjYWJkZjQ1OWNiYTJjNzRiYzQ2NGI5ZWNlIiwid2FpdCI6MTB9fV0sImZvbGRlciI6IkJ1c3RsLiBMaWJyYXJ5In0="><img src="https://i.imgur.com/ZfrIlL4.jpg" /></a>
+              </div><br />
+            </div><br />
+          </div>
+        </section>
+      <!-- End -->
+    <script src=""></script>
+  </body>
+</html>
