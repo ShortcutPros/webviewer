@@ -10,7 +10,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="white-translucent">
   <head>
     <title>Name</title>
-    <link rel="apple-touch-icon" href="https://i.imgur.com/wU8q8qx.png">
+      <link rel="apple-touch-icon" href="https://i.imgur.com/wU8q8qx.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.2/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
@@ -19,10 +19,10 @@
         font-size: 100%;
         font-family: Helvetica, Arial, Freesans, clean, sans-serif;
       }
-      body { margin: 0; padding: 1em; background: white; font-family: system-ui; color: black;
+      body { margin: 0; padding: 1em; background: black; font-family: system-ui; color: white;
       }
       @media (prefers-color-scheme: dark) {
-        body { background-color: black; color: white;
+        body { background-color: #000000; color: #ffffff;
         } /* Dark Mode */
       }
       @media (max-device-width: 480px) {
@@ -35,25 +35,38 @@
       }
     </style>
   </head>
-    <body>
-      <!-- Beg -->
-      <div id="installer" class="card" style="margin: 1; padding: 1em; background-color: lightgray;">
-      <div class="control" style="text-align: center; align-items: center; justify-content: center;>
-      	<div id="shortcut1" class="form">
-      		<form action="shortcuts://run-shortcut">
-      	    <input type="hidden" id="name" name="name" value="INTEGRITY-𝑃𝑅𝑂"> 
-      	    <input type="hidden" id="input" name="input" value="clipboard">
-            <button class="button is-success is-large" type="submit" formnovalidate formmethod="GET" onclick="copy();">Run Setup</button>
-          </form>
-      	</div>
-      </div> 
-    </div>
+  <body>
+    <!-- Beg -->
+    <div class="section is-hero">
+      <div class="container" style="text-align: center; align-items: center, justify-content: center;">
+        <p class="title" style="color: #ffffff; background-color: #000000;">
+        <strong>Bustl. System Installer</strong>
+        </p><br />
+        <p class="subtitle" style="color: #000000; background-color: #ffffff; padding: 1em;">
+        <em>Complete these simple steps to activate your Bustl. Shortcut System.</em>
+        </p>
+          <div id="installer" class="card" style="margin: 1; padding: 1em; background-color: lightgray;">
+            <p class="subtitle">
+            <strong>Step One:</strong><br />
+            <br /> Install <a href="https://www.icloud.com/shortcuts/b9aa3a75106647898e7d173d023588a5 ">
+            <strong><em>"Bustl.-Installer"</em></strong></a>
+              by clicking on the button below:</p><br />
+              <div class="media" style="text-align: center; align-items: center; justify-content: center;">
+                <a href="shortcuts://shortcuts/b9aa3a75106647898e7d173d023588a5">
+                <img src="https://i.imgur.com/9JNqwPt.png" /></a>
+              </div><br />
+            </div><br />
+          <div id="runner" class="card" style="margin: 1; padding: 1em; background-color: lightgray;">
+          <p class="subtitle">
+            <strong>Step Two:</strong><br />
+            <br /> Install your Bustl. profile, your Bustl. access keys, and the Bustl. Shortcut Support Library by clicking on the "Run Setup" button below:</p><br />
+              <div class="media" style="text-align: center; align-items: center; justify-content: center;">
+                <a href="shortcuts://run-shortcut?name=Bustl.-Installer&input=text&text=eyJub3RpZmljYXRpb24iOiJNeU5vdGlmaWNhdGlvbiIsInNlcnZlcmFjdGlvbiI6IlNob3J0Y3V0c0xvZ2dlciIsImNsaWVudCI6eyJlbWFpbCI6InNjb3R0QHdyaWdodC5uYW1lIiwicGhvbmUiOiIrMSAoOTg1KSAyMzItMDg2NSIsIm5hbWUiOiJTY290dCBXcmlnaHQiLCJhcGlfa2V5IjoibU45UmEwZ0p3QVRuWlVoNkVGX0pmZTZTIiwiY3V1aWQiOiJiOTdiN2UwNC01NzEzLTQ0MTktOGE5Zi05NDUxZTBjOWQ1ZTYifSwiYWx0X2tleSI6IlBjZFZtQXptRjJSRGozcXVhdTdCYnhoViJ9;aHR0cHM6Ly93d3cuaWNsb3VkLmNvbS9zaG9ydGN1dHMvN2VmNDAyNjlhODJjNGIyYzg2MzYxOTNlMjYzZGU4N2UKaHR0cHM6Ly93d3cuaWNsb3VkLmNvbS9zaG9ydGN1dHMvOTQ3NTEzNzM3NTc3NDVhODliYjA2MTBkM2MxOTcyNjUKaHR0cHM6Ly93d3cuaWNsb3VkLmNvbS9zaG9ydGN1dHMvM2ZiNjRmNzA2NmZmNDQyMzlhNDA5Njk0Nzg2YTY2YWQKaHR0cHM6Ly93d3cuaWNsb3VkLmNvbS9zaG9ydGN1dHMvYzU2N2NiMjYxM2ViNGM4NWFjNzAzMjcyZGIwNTZhODIKaHR0cHM6Ly93d3cuaWNsb3VkLmNvbS9zaG9ydGN1dHMvMTQ5MWJiY2ZmNTM3NDA4ZTljZTM1ZTQyYzliMTg3ZDEKaHR0cHM6Ly93d3cuaWNsb3VkLmNvbS9zaG9ydGN1dHMvM2NlZWNkMDYxNDc2NGI5OTg2YmFkN2RlYjE2NWM2ZTQKaHR0cHM6Ly93d3cuaWNsb3VkLmNvbS9zaG9ydGN1dHMvZjJkYjJhZWM5YjlhNDZjYmE5MWI2ZjhlYmFlYTA5ZmIKaHR0cHM6Ly93d3cuaWNsb3VkLmNvbS9zaG9ydGN1dHMvM2YxNDYzNjdkOTQ2NGM5OGFmZTI3ZDIwM2QyNTVmNWQKaHR0cHM6Ly93d3cuaWNsb3VkLmNvbS9zaG9ydGN1dHMvZGQxYWNkMDQzMzkxNDYyMzkyMzIwYmVjMjVjZTQ0MzM="><img src="https://i.imgur.com/ZfrIlL4.jpg" /></a>
+              </div><br />
+            </div><br />
+          </div>
+        </section>
       <!-- End -->
-    <script>
-      function copy() {
-        var data = new DataTransfer();
-        navigator.clipboard.writeText("{\"name\":\"Bustl.-Installer\",\"input\":\"eyJub3RpZmljYXRpb24iOiJNeU5vdGlmaWNhdGlvbiIsInNlcnZlcmFjdGlvbiI6IlNob3J0Y3V0c0xvZ2dlciIsImNsaWVudCI6eyJlbWFpbCI6InNjb3R0QHdyaWdodC5uYW1lIiwicGhvbmUiOiIrMSAoOTg1KSAyMzItMDg2NSIsIm5hbWUiOiJTY290dCBXcmlnaHQiLCJhcGlfa2V5IjoibU45UmEwZ0p3QVRuWlVoNkVGX0pmZTZTIiwiY3V1aWQiOiJiOTdiN2UwNC01NzEzLTQ0MTktOGE5Zi05NDUxZTBjOWQ1ZTYifSwiYWx0X2tleSI6IlBjZFZtQXptRjJSRGozcXVhdTdCYnhoViJ9\"}");
-      }
-    </script>
+    <script src=""></script>
   </body>
 </html>
