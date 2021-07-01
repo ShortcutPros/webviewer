@@ -1,72 +1,110 @@
-<!-- Basic HTML-CSS Template -->
-<!-- Bustl.®︎™︎ is a trademark of Simpl System, llc. -->
-<!-- 𝐈𝐍𝐓𝐄𝐆𝐑𝐈𝐓𝐘 Framework | MIT License • https://github.com/scottdwr -->
-<!-- bulma.io v0.9.2 | MIT License | github.com/jgthms/bulma --> 
+<!-- Basic HTML5-CSS3 Template -->
+<!-- Bustl.®︎™︎ is a trademark of Simpl System, llc.-->
+<!-- INTEGRITY | MIT • github.com/scottdwr -->
+<!-- bulma.io v0.9.2 | MIT • github.com/jgthms/bulma --> 
+<!---->
 <!DOCTYPE html>
 <html lang="en" dir="auto">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="white-translucent">
   <head>
-    <title>Name</title>
-      <link rel="apple-touch-icon" href="https://i.imgur.com/wU8q8qx.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.2/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white-translucent">
+    <link rel="apple-touch-icon" href="images/icons/icon-128x128.png" />
+<!-- include icon also from manifest -->
+    <link rel="icon" type="image/png" href="images/icons/icon-128x128.png" sizes="128x128" />
+    <link rel="stylesheet" href="bulma/css/bulma.min.css">
+    <link rel="manifest" href="manifest.json" />
+
+    <title>Index</title>
     <style>
+/*      @import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";*/
+      @import "bulma/css/bulma.min.css";
       @charset "utf-8"; 
-      html { 
-        font-size: 100%;
-        font-family: Helvetica, Arial, Freesans, clean, sans-serif;
-      }
-      body { margin: 0; padding: 1em; background: black; font-family: system-ui; color: white;
-      }
-      @media (prefers-color-scheme: dark) {
-        body { background-color: #000000; color: #ffffff;
-        } /* Dark Mode */
-      }
-      @media (max-device-width: 480px) {
-      }
-      @media (min-device-width: 481px) {
-        body { margin: auto; max-width: 600px;
-        }
-      }
-      img { max-width: 90%;
-      }
+      html { font-size: 100%; font-family: Helvetica, Arial, Freesans, clean, sans-serif; }     
+      body { margin: 0; padding: 1em; background-color: white; font-family: system-ui; color: black; }
+      @media (prefers-color-scheme: dark;) { body { background-color: black; color: white; }}  /* Dark Mode */ 
+      @media (max-device-width: 480px;) { }
+      @media (min-device-width: 481px;) { body { margin: auto; max-width: 600px; }}
+      img { max-width: 90%; }
+      .field { font-size: 1.3rem; }
+      /* debug.css | MIT License | zaydek.github.com/debug.css *
+      :not(path):not(g) {
+      	color:                    hsla(210, 100%, 100%, 0.9) !important;
+      	background:               hsla(210, 100%,  50%, 0.5) !important;
+      	outline:    solid 0.25rem hsla(210, 100%, 100%, 0.5) !important;
+      	box-shadow: none !important;
+      }  */
     </style>
   </head>
   <body>
-    <!-- Beg -->
-    <div class="section is-hero">
-      <div class="container" style="text-align: center; align-items: center, justify-content: center;">
-        <p class="title" style="color: #ffffff; background-color: #000000;">
-        <strong>Bustl. System Installer</strong>
-        </p><br />
-        <p class="subtitle" style="color: #000000; background-color: #ffffff; padding: 1em;">
-        <em>Complete these simple steps to activate your Bustl. Shortcut System.</em>
-        </p>
-          <div id="installer" class="card" style="margin: 1; padding: 1em; background-color: lightgray;">
-            <p class="subtitle">
-            <strong>Step One:</strong><br />
-            <br /> Install <a href="https://www.icloud.com/shortcuts/b9aa3a75106647898e7d173d023588a5 ">
-            <strong><em>"Bustl.-Installer"</em></strong></a>
-              by clicking on the button below:</p><br />
-              <div class="media" style="text-align: center; align-items: center; justify-content: center;">
-                <a href="shortcuts://shortcuts/b9aa3a75106647898e7d173d023588a5">
-                <img src="https://i.imgur.com/9JNqwPt.png" /></a>
-              </div><br />
-            </div><br />
-          <div id="runner" class="card" style="margin: 1; padding: 1em; background-color: lightgray;">
-          <p class="subtitle">
-            <strong>Step Two:</strong><br />
-            <br /> Install your Bustl. profile, your Bustl. access keys, and the Bustl. Shortcut Support Library by clicking on the "Run Setup" button below:</p><br />
-              <div class="media" style="text-align: center; align-items: center; justify-content: center;">
-                <a href="shortcuts://run-shortcut?name=Bustl.-Installer&input=text&text=eyJub3RpZmljYXRpb24iOiJNeU5vdGlmaWNhdGlvbiIsInNlcnZlcmFjdGlvbiI6IlNob3J0Y3V0c0xvZ2dlciIsImNsaWVudCI6eyJlbWFpbCI6InNjb3R0QHdyaWdodC5uYW1lIiwicGhvbmUiOiIrMSAoOTg1KSAyMzItMDg2NSIsIm5hbWUiOiJTY290dCBXcmlnaHQiLCJhcGlfa2V5IjoibU45UmEwZ0p3QVRuWlVoNkVGX0pmZTZTIiwiY3V1aWQiOiJiOTdiN2UwNC01NzEzLTQ0MTktOGE5Zi05NDUxZTBjOWQ1ZTYifSwiYWx0X2tleSI6IlBjZFZtQXptRjJSRGozcXVhdTdCYnhoViJ9;aHR0cHM6Ly93d3cuaWNsb3VkLmNvbS9zaG9ydGN1dHMvN2VmNDAyNjlhODJjNGIyYzg2MzYxOTNlMjYzZGU4N2UKaHR0cHM6Ly93d3cuaWNsb3VkLmNvbS9zaG9ydGN1dHMvN2FlMWVlZjljZjlmNGU2ODhiMjdkNzIyYjE5YWNmOTIKaHR0cHM6Ly93d3cuaWNsb3VkLmNvbS9zaG9ydGN1dHMvZjA4NTM4YjYxMWY0NDg2NmI3MGQ3YzJiNjYxNzBlY2QKaHR0cHM6Ly93d3cuaWNsb3VkLmNvbS9zaG9ydGN1dHMvY2JlNzcwMDlhNDViNDYyMjk0MGRmZjc4MDAzMjM3NTkKaHR0cHM6Ly93d3cuaWNsb3VkLmNvbS9zaG9ydGN1dHMvNDQ2YWE5MjdiNGU2NDg3NmIwNWEwM2E0NmQ2MGZlN2MKaHR0cHM6Ly93d3cuaWNsb3VkLmNvbS9zaG9ydGN1dHMvNmM4ZTkxM2NjYmJmNDY3NDkxMmIwZjhlYzBlMTc2NzYKaHR0cHM6Ly93d3cuaWNsb3VkLmNvbS9zaG9ydGN1dHMvYjBmNDA4MzQ0NWM1NGM3NzhhYmUyZjJlNTYyODZlYzEKaHR0cHM6Ly93d3cuaWNsb3VkLmNvbS9zaG9ydGN1dHMvYmEyYTAwMTQ4YTgxNDU4YmIyZTUzNjQ4ZjdhZWJmOGQKaHR0cHM6Ly93d3cuaWNsb3VkLmNvbS9zaG9ydGN1dHMvNWI1N2VhN2Q3ZWU3NDAwODk2ZDhmNmQwZWRmNTdhNGQ="><img src="https://i.imgur.com/ZfrIlL4.jpg" /></a>
-              </div><br />
-            </div><br />
+<!-- Beg -->
+    <section class="section" style="margin: 0;">
+      <center>
+        <div class="container" style="margin: 0;">
+          <h1 class="title">Bustl. <em>formz</em></h1>
+        </div>
+      </center>
+        <div class="container" style="margin: 3rem;">
+          <div class="field">
+            <label for="username"">Name</label>
+            <div class="control has-icons-left">
+              <input class="input is-active" type="text" id="username" spellcheck="false" placeholder="Jenny Appleseed">
+            </div>
           </div>
-        </section>
-      <!-- End -->
-    <script src=""></script>
+          <div class="field">
+            <label for="email">Email</label>
+            <div class="control">
+              <input class="input is-active" type="email" id="email" autocomplete="true" placeholder="jenny@apple.com">
+            </div>
+          </div>
+          <div class="field">
+            <label for="phone"">Phone</label>
+            <div class="control">
+              <input class="input is-active" type="phone" id="phone" autocomplete="true" placeholder="+1 (111) 555-1234">
+            </div>
+          </div>
+          <div class="field">
+            <label for="color"">Color</label>
+            <div class="control">
+              <input class="input is-active" type="text" id="color" placeholder="Rebecca purple">
+            </div>
+          </div>
+          <div class="field">
+            <center>
+              <div class="control">
+                <button class="button is-black is-medium is-active" style="margin-top: 3rem;" type="submit" id="submit">Submit</button>
+              </div>
+            </center>
+          </div>
+        </div>
+    </section>
+<!-- End -->
+    <script>
+      function copy(message) {
+        var data = new DataTransfer();
+          navigator.clipboard.writeText(message);
+      }
+      const form = {
+        username: document.getElementById('username'),
+        email: document.getElementById('email'),
+        phone: document.getElementById('phone'),
+        color: document.getElementById('color'),
+        submit: document.getElementById('submit'),
+      };
+      form.submit.addEventListener('click', () => {
+        const requestData = `{\"name\":\"Bustl Formz Builder\",\"input\":{\"username\":\"${form.username.value}\",\"email\":\"${form.email.value}\",\"phone\":\"${form.phone.value}\",\"color\":\"${form.color.value}\"}}`;
+        
+        const sendData = encodeURI(requestData);
+        copy(requestData);
+        
+        window.open('shortcuts://run-shortcut?name=INTEGRITY&input=text&text='+sendData);
+        window.close();
+      });
+    </script>
+    <script src="js/main.js"></script>
   </body>
 </html>
+
+
+<!-- {\"client\":{\"email\":\"alex@simplsystems.com\",\"phone\":\"+1 (509) 240-3461\",\"name\":\"Alex Grimaud\",\"api_key\":\"5SLIH0xt4jdm6iXbprhHplK6\",\"cuuid\":\"5EE4DBD0-09E4-40CF-A14A-60C0A1B0B9B1\"},\"settings\":{\"notification\":\"MyNotification\",\"alternate_key\":\"PcdVmAzmF2RDj3quau7BbxhV\",\"serveraction\":\"ShortcutsLogger\"}} -->
