@@ -1,31 +1,46 @@
-<!— Button & Script —>
-<!— Copy Profile to Clioboard —>
-<!— Then Open Shortcut Install Link —>
-<!— —> 
+<!-- Button & Script -->
+<!-- Copy Profile to Clioboard -->
+<!-- Then Open Shortcut Install Link -->
+<!-- --> 
 <!DOCTYPE html>
-<html lang=“en” dir=“auto”>
-  <meta charset=“UTF-8”>
-  <meta name=“viewport” content=“width=device-width,initial-scale=1.0”>
+<html lang="en" dir="auto">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <head>
     <title>Install Profile</title>
   </head>
   <body>
-        <!— BEGIN INSTALL BUTTON —>
-      <button style=“background-color:white;margin:0;padding:1em;font-size:1em;” onclick=“copy();message()” ondblclick=“go();”><p id=“message”>Install Shortcut</p></button>
-    <script>
-      function message() {
-        var msg = document.getElementById(“message”);
-        msg.innerHTML = “Your Profile Is On Your Clipboard.”+”<br />”+”Double-Click to Install.”;
+<!-- BEGIN INSTALL BUTTON -->
+    <div id="display">
+    </div>
+    <button class="button"></button>
+<!-- END INSTALL BUTTON  -->
+  <script>
+    // Read data from uploaded files
+    function copy() {
+      navigator.clipboard.writeText(profile);
+      document.querySelector(".button").innerHTML = `<button id="button" class="button" onclick="window.open('shortcuts://shortcuts/3cce1e40e99b4c77b71c05e3f487fbe6');window.close();">Click to Install Shortcut</button>`;
+    };
+    var query_string = {};
+    var query = window.location.search.substring(1);
+    console.log(query);
+    
+    if (query) {
+      var param = decodeURIComponent(query);
+      var dict = JSON.parse(param);
+      
+      if (dict) {
+        var profile = JSON.stringify(dict, null, 2); // spacing level = 2
+        document.querySelector("#display").innerHTML = "<div class='success'><pre>"+profile+"</pre></div>";
+        document.querySelector(".button").innerHTML = `<button class="button" onclick="copy();">Click to Copy Profile</button>`;
       }
-      function copy() {
-        var data = new DataTransfer();
-        navigator.clipboard.writeText(“{\”client\”:{\”email\”:\”alex@simplsystems.com\”,\”phone\”:\”+1 (509) 240-3461\”,\”name\”:\”Alex Grimaud\”,\”api_key\”:\”5SLIH0xt4jdm6iXbprhHplK6\”,\”cuuid\”:\”5EE4DBD0-09E4-40CF-A14A-60C0A1B0B9B1\”},\”settings\”:{\”notification\”:\”MyNotification\”,\”alternate_key\”:\”PcdVmAzmF2RDj3quau7BbxhV\”,\”serveraction\”:\”ShortcutsLogger\”}}”);
-      }
-      function go() {
-        copy();
-        window.open(“shortcuts://shortcuts/3cce1e40e99b4c77b71c05e3f487fbe6”);
-        window.close();}
-    </script>
-        <!— END INSTALL BUTTON —>
-  </body>
+      else {
+        document.querySelector("#display").innerHTML = "<div class='error'>Invalid \"profile\" parameter.</div>"
+      };
+    }
+    else {
+      document.querySelector("#display").innerHTML = "<div class='error'>No \"profile\" parameter found.</div>"
+    };
+  </script>
+</body>
 </html>

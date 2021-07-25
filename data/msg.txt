@@ -1,0 +1,1 @@
+<p id="msg">"Your Profile Is On Your Clipboard."+"<br />"+"Click again to Install."</p>
